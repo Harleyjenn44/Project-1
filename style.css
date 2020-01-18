@@ -67,5 +67,10 @@
   }
 
   #gif {
-    padding-left: 800px; 
+    padding-left: 800px;  
+  }
+
+  .giphy {
+    position: fixed;
+    z-index: 1;
   }
