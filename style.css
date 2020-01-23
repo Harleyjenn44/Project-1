@@ -1,8 +1,21 @@
 body {
   background-color: rgba(20, 48, 13, 0.575);
   text-align: center;
-}
+  font-family: 'Cinzel Decorative', cursive;
 
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+h2{
+  font-size: 15px;
+
+}
+#generatedStory{
+  background-image:("https://cdn1.vectorstock.com/i/1000x1000/49/00/classic-frame-scroll-on-white-background-vector-22914900.jpg");
+  background-color: #cccccc;
+}
 #storyContainer { 
   border: black;
   align-content: right; 
