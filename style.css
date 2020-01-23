@@ -13,8 +13,8 @@ h2{
 
 }
 #generatedStory{
-  background-image: url("https://www.flickr.com/photos/186571216@N05/49427399616/in/dateposted-public/");
-  background-color: #cccccc;
+  background-image: url(frame.jpg);
+ 
 }
 #storyContainer { 
   border: black;
