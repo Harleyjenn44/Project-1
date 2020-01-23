@@ -1,3 +1,8 @@
+body {
+  background-color: rgba(20, 48, 13, 0.575);
+  text-align: center;
+}
+
 #storyContainer { 
   border: black;
   align-content: right; 
