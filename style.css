@@ -75,11 +75,42 @@
     .sidenav a {font-size: 18px;}
   }
 
-  #gif {
-    padding-left: 800px;  
+  /* gif container */
+
+  #gif-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; 
+    z-index: -1; 
   }
 
   .giphy {
     position: fixed;
     z-index: 1;
-  }
+    margin-left: 900px; 
+    overflow-y: auto;
+    overflow-x: auto; 
+  };
+
+  #new-gif {
+    padding: .75rem 2.5rem;
+    font-weight: 600;
+    background: #424242;
+    z-index: 10;
+    color: #fff;
+    border-radius: 30px;
+    border: 0;
+    font-size: 14px;
+    position: fixed;
+    top: .5rem;
+    left: .5rem;
+    transition: background .15s ease;
+    cursor: pointer;
+    }
