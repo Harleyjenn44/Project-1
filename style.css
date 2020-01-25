@@ -168,11 +168,8 @@ h2{
     .sidenav a {font-size: 18px;}
   }
 
-  #gif {
-    padding-left: 800px;  
-  }
+  /* gif container */
 
-  .giphy {
-    position: fixed;
-    z-index: 1;
+  #gif-wrap {
+    float: right; 
   }
