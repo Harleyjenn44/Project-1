@@ -24,7 +24,8 @@
             how intense the conflict is. Now do you want a good ending or a bad ending? Now's the time to create
             your
             story!</h2>
-        <hr></div>
+        <hr>
+    </div>
 
     <div class="sidenav">
 
@@ -36,37 +37,61 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#">Male</a>
-            <a href="#">Female</a>
-            <a href="#">Monster</a>
+            <a href="Male">Male</a>
+            <a href="Female">Female</a>
+            <a href="Monster">Monster</a>
         </div>
-        <button class="dropdown-btn">How Many
+        <!-- <button class="dropdown-btn">How Many
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
-        </div>
+        </div> -->
         <button class="dropdown-btn">Conflict 0-5
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#">0-1</a>
-            <a href="#">2-3</a>
-            <a href="#">4-5</a>
+            <a href="#0">0</a>
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
         </div>
         <button class="dropdown-btn">Ending
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container" style="display:none;">
-            <a href="#">Good</a>
-            <a href="#">Bad</a>
-            <a href="#">Destroy</a>
+            <a href="Good">Good</a>
+            <a href="Bad">Bad</a>
+            <a href="Destroy">Destroy</a>
         </div>
 
-        <a href="#render">RENDER STORY</a>
-    </div>
+        <!-- <a href="#render">RENDER STORY</a> -->
+
+
+
+        <!-- Trigger/Open The Modal -->
+        <button id="#render">RENDER STORY</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Your Story is....</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Name- </p>
+                    <p>Territory- </p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Conclusion!</h3>
+                </div>
 
     <div>
         <!-- //story adds here// -->
@@ -81,10 +106,20 @@
         <h2 class="story-header"> Your Story: </h2>
         <div id = "generatedStory" >
             <p>this is just random text to test the image</p>
-            </div>
-    </div>
 
-  <script src=script.js></script>  
+
+        </div>
+
+
+        <div class="giphy">
+            <img id="gif" src="https://media.giphy.com/media/LXP19BrVaOOgE/giphy.gif" width="480" height="240"
+                frameBorder="1" class="gif" allowFullScreen></img>
+        </div>
+        ​
+
+
+        <script src="script.js"></script>
+
 </body>
 
 </html>
