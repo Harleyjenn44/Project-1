@@ -1,6 +1,26 @@
+body {
+  background-color: rgba(20, 48, 13, 0.575);
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  
+
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+h2{
+  font-size: 15px;
+
+}
+ #generatedStory{
+  background-image: url(new.jpg);
+ 
+}  
 #storyContainer { 
   border: black;
   align-content: right; 
+  
 }
 
 #giphyContainer {
@@ -12,13 +32,14 @@
   /* Fixed sidenav, full height */
   .sidenav {
     height: 800px;
-    width: 300px;
+    width: 200px;
     float: left;
     /* position: fixed; */
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-image: url(http://bgfons.com/uploads/lines/lines_texture1095.jpg);
+    background-color:firebrick;
     overflow-x: hidden;
     padding-top: 20px;
   }
