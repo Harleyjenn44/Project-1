@@ -22,7 +22,7 @@ h2{
   align-content: right; 
   
 }
-
+/* GIF container */
 #giphyContainer {
   float: right;
 }
@@ -166,10 +166,4 @@ h2{
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
-
-  /* gif container */
-
-  #gif-wrap {
-    float: right; 
   }
