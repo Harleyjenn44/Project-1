@@ -18,24 +18,7 @@ $(document).ready(() => {
             dropdownContent.style.display = "block";
         }
     })
-
-
-
-//    for (i = 0; i < dropdown.length; i++) {
-       $(".dropdown-btn").on("click", function () {
-           this.classList.toggle("active");
-           var dropdownContent = this.nextElementSibling;
-           console.log(dropdownContent);
-           if (dropdownContent.style.display === "block") {
-               dropdownContent.style.display = "none";
-           } else {
-               dropdownContent.style.display = "block";
-           }
-
-       });
-//    }
 });
-
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -62,7 +45,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 
-}})
+}
+
 
 
 
