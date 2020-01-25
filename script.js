@@ -1,24 +1,28 @@
 
 
-$(document).ready(()=>{
-       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-   
-//    var dropdown = document.getElementsByClassName("dropdown-btn");
-//    var i;
+$(document).ready(() => {
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 
-//    for (i = 0; i < dropdown.length; i++) {
-       $(".dropdown-btn").on("click", function () {
-           this.classList.toggle("active");
-           var dropdownContent = this.nextElementSibling;
-           console.log(dropdownContent);
-           if (dropdownContent.style.display === "block") {
-               dropdownContent.style.display = "none";
-           } else {
-               dropdownContent.style.display = "block";
-           }
-       });
-//    }
-});
+
+    //    var dropdown = document.getElementsByClassName("dropdown-btn");
+    //    var i;
+
+    //    for (i = 0; i < dropdown.length; i++) {
+    $(".dropdown-btn").on("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        console.log(dropdownContent);
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    })
+
+
+   
+
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -44,4 +48,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+
+}})
+
+
