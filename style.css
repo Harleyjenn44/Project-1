@@ -1,7 +1,7 @@
 body {
   background-color: rgba(20, 48, 13, 0.575);
   text-align: center;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', cursive !important;
   
 
 }
@@ -17,6 +17,10 @@ h2{
   background-image: url(new.jpg);
  
 }  
+#header{
+  background-image: url(Header2.jpg);
+  color: white
+}
 #storyContainer { 
   border: black;
   align-content: right; 
