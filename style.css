@@ -41,12 +41,12 @@ h2{
     background-image: url(http://bgfons.com/uploads/lines/lines_texture1095.jpg);
     background-color:firebrick;
     overflow-x: hidden;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
-    padding: 30px 8px 36px 36px;
+    padding: 10px 8px 26px 26px;
     text-decoration: none;
     font-size: 20px;
     color: whitesmoke;
