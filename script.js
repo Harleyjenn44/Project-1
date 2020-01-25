@@ -16,6 +16,4 @@ $(document).ready(()=>{
            } else {
                dropdownContent.style.display = "block";
            }
-       });
-//    }
-});
+       })
