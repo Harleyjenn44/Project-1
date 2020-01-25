@@ -17,6 +17,10 @@ h2{
   background-image: url(new.jpg);
  
 }  
+#header{
+  background-image: url(Header_EyeOfSauoron.jpg);
+  color: white
+}
 #storyContainer { 
   border: black;
   align-content: right; 
