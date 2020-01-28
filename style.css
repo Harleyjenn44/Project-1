@@ -29,12 +29,16 @@ h2{
   background-size: cover;
   background-position: center;
 }
-/* #storyContainer { 
+/* #storyContainer {
+    border: black;
+    align-content: right;
+    
+} */
+.giphyContainer { 
   border: black;
   align-content: right; 
   
-} */
-
+}
 /* GIF container */
 .giphyContainer {
   float: right;  
@@ -162,17 +166,18 @@ h2{
 }
 
 #render {
-  /* color: rgb(57, 57, 57); */
-  background-color: rgb(242, 115, 3);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  color: aqua;
+   /* color: rgb(57, 57, 57); */
+   background-color: rgb(242, 115, 3);
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
 }
   /* Main content */
   .main {
@@ -217,8 +222,8 @@ h2{
   }
   /* ---start stlying for smaller screens--- */
   @media (max-width: 767px) {
-    .page-header h1 {
-      font-size: 2.5em;
-    }
-  
+  .page-header h1 {
+    font-size: 2.5em; 
   }
+
+}
