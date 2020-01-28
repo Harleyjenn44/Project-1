@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous"> 
     <link rel="stylesheet" href="style.css" />
-
+<style>
+   
+</style>
 </head>
 
 <body>
@@ -37,8 +39,8 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="Male">Male</a>
-            <a href="Female">Female</a>
+            <a id="Male">Male</a>
+            <a id="Female">Female</a>
             
         </div>
        
@@ -46,27 +48,27 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#0">0</a>
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#4">4</a>
-            <a href="#5">5</a>
+            <a id='btnc0'>0</a>
+            <a id='btnc1'>1</a>
+            <a id='btnc2'>2</a>
+            <a id=btnc3>3</a>
+            <a id='btnc4'>4</a>
+            <a id='btnc5'>5</a>
         </div>
         <button class="dropdown-btn">Ending
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container" style="display:none;">
-            <a href="Good">Good</a>
-            <a href="Bad">Bad</a>
-            <a href="Destroy">Destroy</a>
+            <a id='end0'>Good</a>
+            <a id='end1'>Bad</a>
+            <a id='end2'>Destroy</a>
         </div>
 
      
 
 
         <!-- Trigger/Open The Modal -->
-        <button id="render">RENDER STORY</button>
+        <button id="render">Onward</button>
 
         
         <!-- The Modal -->
@@ -79,15 +81,14 @@
                     <h2>Character Stats</h2>
                 </div>
                 <div class="modal-body">
-                    <p>Name- </p>
-                    <p>Territory- </p>
-                    <p>Conflict Rating-</p>
-                    <P>Ending-</P>
+                    <p id="nametext"></p>
+                    <p id='citytext'></p>
+                    
                 </div>
 
                 
                 <div id="endText" class="modal-footer">
-                    <h3>Onward!</h3>
+                    <h3>Render Story!</h3>
 
                 </div>
 </div>
@@ -97,7 +98,7 @@
 
 <div class="giphyContainer">
     <iframe id="gif-wrap" src="https://giphy.com/embed/Sg4He6Tb4LoXK" width= "280" height= "272" frameBorder="none" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lord-of-the-rings-lotr-Sg4He6Tb4LoXK"></a></p>
-
+<div id='text'></div>
 ​</div>
 
 
@@ -105,6 +106,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="brandon.js"></script>
         <script src="script.js"></script>
+        <script src="jared.js"></script>
 </body>
 
 </html>
