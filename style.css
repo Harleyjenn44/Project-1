@@ -43,7 +43,7 @@ h2{
     top: 0;
     left: 0;
     background-image: url(https://www.redwolf.in/image/catalog/artwork-Images/phone-covers/mobgotsigscatter.jpg);
-    background-color:firebrick;
+    background-color:rgb(57, 57, 57);
     overflow-x: hidden;
     /* padding-top: 20px; */
   }
@@ -53,6 +53,7 @@ h2{
     padding: 10px 8px 26px 26px;
     text-decoration: none;
     font-size: 20px;
+    text-shadow: 2px 2px 5px black;
     color: whitesmoke;
     display: block;
     border: none;
@@ -135,10 +136,30 @@ h2{
   padding: 2px 16px;
   background-color: #575757;
   color: white;
+  background-color: #575757;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 #render {
-  color: aqua;
+  /* color: rgb(57, 57, 57); */
+  background-color: rgb(242, 115, 3);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
   /* Main content */
   .main {
