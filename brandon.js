@@ -22,3 +22,10 @@
         });
     });
 });
+// Get the button that generates the GIF
+var gifBtn = document.getElementById("#render")
+
+// When the user clicks the button, it pulls a new GIF
+gifBtn.onclick = function() {
+    gifBtn = "block";
+}

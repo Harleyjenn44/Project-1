@@ -27,9 +27,13 @@ h2{
   
 }
 /* GIF container */
-#giphyContainer {
-  float: right;
+.giphyContainer {
+  float: right;  
+  margin-right: 100px;
+  margin-top: 50px;
 }
+
+
 
 
   
