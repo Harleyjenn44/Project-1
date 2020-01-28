@@ -3,7 +3,7 @@ $(document).ready(function(){
       var imgSrc;
       var imgId;
       $.ajax ({
-        url: ,
+        url: "api.giphy.com/v1/gifs/search",
         type: "GET",
         dataType: "json",
         success: function(response) {
