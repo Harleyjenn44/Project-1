@@ -1,10 +1,13 @@
 body {
   background-color: rgba(20, 48, 13, 0.575);
   text-align: center;
-  font-family: 'Cinzel Decorative', cursive;
-  
 
 }
+
+*{
+  font-family: 'Cinzel Decorative', cursive !important;
+}
+
 h1{
   font-size: 50px;
   font-weight: bold;
@@ -17,12 +20,22 @@ h2{
   background-image: url(new.jpg);
  
 }  
-#storyContainer { 
+#header{
+  background-image: url(Header2.jpg);
+  color: white;
+  height: auto;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* #storyContainer { 
   border: black;
   align-content: right; 
   
-}
+} */
 
+/* GIF container */
 #giphyContainer {
   float: right;
 }
@@ -38,17 +51,18 @@ h2{
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url(http://bgfons.com/uploads/lines/lines_texture1095.jpg);
-    background-color:firebrick;
+    background-image: url(https://www.redwolf.in/image/catalog/artwork-Images/phone-covers/mobgotsigscatter.jpg);
+    background-color:rgb(57, 57, 57);
     overflow-x: hidden;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
-    padding: 30px 8px 36px 36px;
+    padding: 10px 8px 26px 26px;
     text-decoration: none;
     font-size: 20px;
+    text-shadow: 2px 2px 5px black;
     color: whitesmoke;
     display: block;
     border: none;
@@ -63,7 +77,99 @@ h2{
   .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
   }
-  
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #575757;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #575757;
+  color: white;
+  background-color: #575757;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#render {
+  /* color: rgb(57, 57, 57); */
+  background-color: rgb(242, 115, 3);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
   /* Main content */
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -73,7 +179,7 @@ h2{
   
   /* Add an active class to the active dropdown button */
   .active {
-    background-color: green;
+    background-color: rgb(85, 81, 81);
     color: white;
   }
   
@@ -94,13 +200,4 @@ h2{
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
-
-  #gif {
-    padding-left: 800px;  
-  }
-
-  .giphy {
-    position: fixed;
-    z-index: 1;
   }

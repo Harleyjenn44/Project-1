@@ -9,69 +9,18 @@
     <title>Game of the Rings</title>
     <link rel="stylesheet" href="reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous"> 
     <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-
-    <div class="sidenav">
-
-        <!-- <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#contact">Contact</a> -->
-        <button class="dropdown-btn">Character
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Male</a>
-            <a href="#">Female</a>
-            <a href="#">Monster</a>
-        </div>
-        <button class="dropdown-btn">How Many
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-        </div>
-        <button class="dropdown-btn">Conflict 0-5
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">0-1</a>
-            <a href="#">2-3</a>
-            <a href="#">4-5</a>
-        </div>
-        <button class="dropdown-btn">Ending
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container" style="display:none;">
-            <a href="#">Good</a>
-            <a href="#">Bad</a>
-            <a href="#">Destroy</a>
-        </div>
-
-        <a href="#render">RENDER STORY</a>
-        
-
-        <button class="dropdown-btn">Conflict 0-5
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">0-1</a>
-            <a href="#">2-3</a>
-            <a href="#">4-5</a>
-        </div>
-
-    </div>
-
     <div id=header>
         <h1>Game of the Rings</h1>
-        <hr>
+       
+    </div>
+<div id=instructions>
+  
         <h2>Welcome to Game of the Rings: a create your own story. Here's how to start. First choose what you want
             your
             main character to be. Then choose how many other characters you want. Now is the fun part. You get to
@@ -79,22 +28,83 @@
             how intense the conflict is. Now do you want a good ending or a bad ending? Now's the time to create
             your
             story!</h2>
-            <hr>
-    </div>
+   <hr>
+</div>
+    <div class="sidenav">
+
+       
+        <button class="dropdown-btn">Character
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="Male">Male</a>
+            <a href="Female">Female</a>
+            
+        </div>
+       
+        <button class="dropdown-btn">Conflict 0-5
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#0">0</a>
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+        </div>
+        <button class="dropdown-btn">Ending
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container" style="display:none;">
+            <a href="Good">Good</a>
+            <a href="Bad">Bad</a>
+            <a href="Destroy">Destroy</a>
+        </div>
+
+     
+
+
+        <!-- Trigger/Open The Modal -->
+        <button id="render">RENDER STORY</button>
+
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Character Stats</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Name- </p>
+                    <p>Territory- </p>
+                    <p>Conflict Rating-</p>
+                    <P>Ending-</P>
+                </div>
+
+                
+                <div id="endText" class="modal-footer">
+                    <h3>Onward!</h3>
+
+                </div>
+</div>
+</div>
+</div>
+
+
+<div class="giphyContainer">
+    <iframe id="gif-wrap" src="https://giphy.com/embed/Sg4He6Tb4LoXK" width= "280" height= "272" frameBorder="none" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lord-of-the-rings-lotr-Sg4He6Tb4LoXK"></a></p>
+
+​</div>
+
+
     ​
-    <div class="storyContainer">
-        <h2 class="story-header"> Your Story: </h2>
-        <div id = "generatedStory" >
-            <p>this is just random text to test the image</p>
-            </div>
-    </div>
-
-    <div class="giphy">
-        <img id="gif" src="https://media.giphy.com/media/LXP19BrVaOOgE/giphy.gif" width="480" height="240"
-            frameBorder="1" class="gif" allowFullScreen></img>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="brandon.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
