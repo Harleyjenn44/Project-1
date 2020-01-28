@@ -29,10 +29,20 @@ h2{
   background-size: cover;
   background-position: center;
 }
-#storyContainer { 
+/* #storyContainer { 
   border: black;
   align-content: right; 
   
+} */
+.storybook{
+  background-image: url(old_book_160.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 700px;
+  float: right;
+  margin-right: 50px;
+  height: 800px;
 }
 /* GIF container */
 #giphyContainer {
