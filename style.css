@@ -213,16 +213,14 @@ h2{
   }
 
   /* GIF generator */
-  .giphyContaine
-  .iframe {
-    width: 50%;
-    height: 0;
-    padding-bottom: 100%;
+  .giphyContainer
+  .gifWrap {
+    width: 75%;
     position: relative;
-  }
+  };
   /* ---start stlying for smaller screens--- */
   @media (max-width: 767px) {
-  .iframe {
+  .gifWrap {
     font-size: 2.5em; 
   }
 
