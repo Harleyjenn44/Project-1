@@ -1,37 +1,35 @@
  /* random gif generator function */
- const gif = "https://api.giphy.com/v1/gifs/search?api_key=XSXt8Mw82KruMzNHClWNR3VRLvP3nTMO&q=game+of+thrones&limit=2&rating=PG";
-const giphy= {
-  apiBase: "https://api.giphy.com/v1/gifs/search?",
-  apiKey: "XSXt8Mw82KruMzNHClWNR3VRLvP3nTMO",
-  query: 'lord+of+the+rings' & "game+of+thrones", 
-  limit: "1",
-  rating: "PG"
-};
+const apiKey = "XSXt8Mw82KruMzNHClWNR3VRLvP3nTMO";
+const apiBase= "https://api.giphy.com/v1/gifs/search?";
+const query= 'lord+of+the+rings'; 
+const limit= "25";
+const rating= "PG";
+const type= "gif";
 //Target containter where gif is
-const $gifWrap = $(".gifWrap");
+const $gifDiv = $("gifDiv");
 // Giphy API URL
 let giphyApi = encodeURI(
-  giphy.baseURL +
-  "api_key" +
-  giphy.apiKey +
+  apiBase +
+  "api_key=" +
+  apiKey +
   "&q=" +
-  giphy.query + 
+  query + 
   "&limit=" +
-  giphy.limit + 
+  limit + 
   "&rating" +
-  giphy.rating
+  rating
 );
 
-//Call giphy API and render data when "onward" button is pressed
-var render = () => $.getJSON(gif, json => renderGif(json.data));
+console.log(giphyApi);
 
 //Display gif in container
-var renderGif = _giphy => {
-  console.log(_giphy);
-}
+var render = () => $.getJSON(giphyApi, json => render(json.data[1].original.url));
 
+//Call giphy API and render data when "onward" button is pressed
 var btn = document.getElementById("endText");
-
 $('#endText').on('click', function(event) {
-  renderGif
-})
+var gifImg = $("<gifImg>"); 
+gifImg.addClass("gifClass");
+gifImg.attr("src",render);
+gifDiv.append(gifImg);
+});
