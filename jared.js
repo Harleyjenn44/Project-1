@@ -88,6 +88,7 @@ namelog.append(name);
 var cstart=cities[Math.floor(Math.random()*cities.length)];
 console.log(cstart)
 namelog.append('<br /> at: '+cstart);
+$('#Male').css('color', 'blue');
     })})
 
 $('#Female').on("click", function(event) {
@@ -95,37 +96,44 @@ name=gnamef[Math.floor(Math.random() * gnamef.length)]+"\u00A0"+lastname[Math.fl
 console.log(fname)
 namelog.append(name);
 namelog.append('<br /> at: '+cstart);
+$('#Female').css('color', 'blue');
 })
 
 $('#btnc0').on("click", function(event) {
 con=Conflict[0];
 console.log(con);
 namelog.append('<br />'+'Conflict rating:0');
+$('#btnc0').css('color', 'blue');
 })
 
 $('#btnc1').on("click", function(event) {
 con=Conflict[1];
 namelog.append('<br />'+'Conflict rating:1');
+$('#btnc1').css('color', 'blue');
 })
 
 $('#btnc2').on("click", function(event) {
 con=Conflict[2];
 namelog.append('<br />'+'Conflict rating:2');
+$('#btnc2').css('color', 'blue');
 })
 
 $('#btnc3').on("click", function(event) {
 con=Conflict[3];
 namelog.append('<br />'+'Conflict rating:3');
+$('#btnc3').css('color', 'blue');
 })
 
 $('#btnc4').on("click", function(event) {
 con=Conflict[4];
 namelog.append('<br />'+'Conflict rating:4');
+$('#btnc4').css('color', 'blue');
 })
 
 $('#btnc5').on("click", function(event) {
 con=Conflict[5];
 namelog.append('<br />'+'Conflict rating:5');
+$('#btnc5').css('color', 'blue');
 })
 
 
@@ -134,19 +142,28 @@ $('#end0').on('click', function(event) {
     end=Endings[0];
     console.log(end);
     namelog.append('<br />'+'Ending=Good');
+    $('#end0').css('color', 'blue');
 })
 $('#end1').on('click', function(event) {
     end=Endings[1];
     console.log(end);
     namelog.append('<br />'+'Ending=Bad');
+    $('#end1').css('color', 'blue');
 })
 $('#end2').on('click', function(event) {
     end=Endings[2];
-    console.log(end)
+    console.log(end);
     namelog.append('<br />'+'Ending=Destruction');
+    $('#end2').css('color', 'blue');
 })
 
 $('#endText').on('click', function(event) {
 var storytext=$('#text');
+storytext.html("");
+modal.style.display = "none";
 storytext.append('One day you,'+"\u00A0"+name+', were walking through'+"\u00A0"+cstart+"\u00A0"+'when all of a sudden a passerby approaches you!  You have a breif discussion, and then...'+'<br />'+con+'<br />'+end);
-})
+});
+
+$('#clearbtn').on('click', function(event){
+  storytext.html("");
+});
