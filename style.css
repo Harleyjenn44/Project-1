@@ -29,16 +29,24 @@ h2{
   background-size: cover;
   background-position: center;
 }
-/* #storyContainer { 
+/* #storyContainer {
+    border: black;
+    align-content: right;
+    
+} */
+.giphyContainer { 
   border: black;
   align-content: right; 
   
-} */
-
-/* GIF container */
-#giphyContainer {
-  float: right;
 }
+/* GIF container */
+.giphyContainer {
+  float: right;  
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+
 
 
   
@@ -158,17 +166,18 @@ h2{
 }
 
 #render {
-  /* color: rgb(57, 57, 57); */
-  background-color: rgb(242, 115, 3);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  color: aqua;
+   /* color: rgb(57, 57, 57); */
+   background-color: rgb(242, 115, 3);
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
 }
   /* Main content */
   .main {
@@ -200,4 +209,19 @@ h2{
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    
   }
+
+  /* GIF generator */
+  .giphyContainer
+  .gifWrap {
+    width: 75%;
+    position: relative;
+  };
+  /* ---start stlying for smaller screens--- */
+  @media (max-width: 767px) {
+  .gifWrap {
+    font-size: 2.5em; 
+  }
+
+}

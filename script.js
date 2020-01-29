@@ -18,6 +18,7 @@ $(document).ready(() => {
             dropdownContent.style.display = "block";
         }
     })
+
 });
 
 // Get the modal
@@ -44,7 +45,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-
+ 
 }
 
 
