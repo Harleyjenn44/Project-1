@@ -30,7 +30,8 @@ var renderGif = _giphy => {
   console.log(_giphy);
 }
 
-var btn = document.getElementById("render");
+var btn = document.getElementById("endText");
 
-btn.onclick = function() {
-  renderGif}; 
+$('#endText').on('click', function(event) {
+  renderGif
+})
