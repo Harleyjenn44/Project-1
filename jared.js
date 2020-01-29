@@ -71,6 +71,8 @@ var gculture = [
     var fname='';
 
     var cstart=cities[Math.floor(Math.random()*cities.length)];
+
+    var storytext=$('#text');
     
 
     $('#Male').on("click", function(event) {
@@ -158,7 +160,6 @@ $('#end2').on('click', function(event) {
 })
 
 $('#endText').on('click', function(event) {
-var storytext=$('#text');
 storytext.html("");
 modal.style.display = "none";
 storytext.append('One day you,'+"\u00A0"+name+', were walking through'+"\u00A0"+cstart+"\u00A0"+'when all of a sudden a passerby approaches you!  You have a breif discussion, and then...'+'<br />'+con+'<br />'+end);
