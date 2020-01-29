@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of the Rings Testing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btn">Click here to start!</button>
+    <div id="text"></div>
+</body>
+<script type="text/javascript">
+var num = Math.round(Math.random() * 583);
+console.log(num)
+var GqueryURL = "https://www.anapioficeandfire.com/api/characters/"+num;
+var LqueryURL = "https://the-one-api.herokuapp.com/v1/movie/";
+var key = "Authorization: Bearer uG60W3Bu5ezwoDyDopGM";
+
+    
+$.ajax({
+  url: GqueryURL,
+  method: "GET"
+}).then(function(response){;
+console.log(response);
+console.log(response.name);
+var name = response.name;
+console.log(name)
+$('#text').append(name);
+});
+
+$.ajax({
+  url: LqueryURL+key,
+  method: "GET"
+}).then(function(response) {
+  console.log(response)
+
+
+
+});
+
+
+</script>
+</html>
