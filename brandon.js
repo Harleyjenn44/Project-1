@@ -16,7 +16,7 @@ let giphyApi = encodeURI(
   query + 
   "&limit=" +
   limit + 
-  "&rating" +
+  "&rating=" +
   rating
 );
 
