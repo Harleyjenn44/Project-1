@@ -32,4 +32,4 @@ var gifImg = $("<gifImg>");
 gifImg.addClass("gifClass");
 gifImg.attr("src",render);
 gifDiv.append(gifImg);
-});
+})
