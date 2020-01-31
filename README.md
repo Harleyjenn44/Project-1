@@ -8,7 +8,7 @@ This code is designed to allow the user to:
 <br> - What level of conflict they want
 <br> - What kind of ending
 <br>And even better? 
-An amazing Gif that goes with the story is generated!
+An amazing Gif that goes with the story when generated!
 <br>
 <br>
 The story is powered by JavaScript, and your choices. 
