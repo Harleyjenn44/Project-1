@@ -1,9 +1,9 @@
 # Project-1
 <br>
-Welcome to Game of the Rings. 
+<h1>Welcome to Game of the Rings</h1>
 <br>
-A Lord of the Rings and Game of Thrones Mad Libs. 
-This code is designed to allow the user to 
+A Lord of the Rings and Game of Thrones Mad Libs. <br>
+This code is designed to allow the user to: 
 <br> - Choose the gender of their character
 <br> - What level of conflict they want
 <br> - What kind of ending
