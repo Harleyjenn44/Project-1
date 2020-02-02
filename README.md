@@ -3,6 +3,8 @@ Project-1
 <h1>Welcome to "Game of the Rings"</h1>
 https://harleyjenn44.github.io/Project-1/
 <br>
+<br>
+<br>
 A "Lord of the Rings" and "Game of Thrones" Mad Libs. <br>
 This code is designed to allow the user to: 
 <br> - Choose the gender of character you want
